@@ -9,7 +9,7 @@ def index(request):
     return HttpResponse("This is the first view")
     
 def htmlPage(request): 
-    response = requests.get('http://Flask:9001')
+    response = requests.get('http://35.226.130.236:30300')
     #response = requests.get('http://167.99.234.75:9001')
     
     return render(request, 'index.html' , {'hello' : response.content.decode("utf-8")})
