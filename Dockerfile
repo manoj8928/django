@@ -1,5 +1,6 @@
 FROM python:3 
-RUN pip3 install django 
+RUN pip3 install django
+RUN pip3 install requests
 WORKDIR /var
 RUN git clone https://github.com/manoj8928/django.git
 WORKDIR /var/django
