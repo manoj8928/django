@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: api
-        image: "$DOCKER-IMAGE"
+        image: "{{DOCKER_IMAGE}}"
         ports:
         - containerPort: 9001
