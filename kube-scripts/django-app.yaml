@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: api-deployment
+  name: app-deployment
   labels:
-    app: api
+    app: app
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: api
+      app: app
   template:
     metadata:
       labels:
-        app: api
+        app: app
     spec:
       containers:
-      - name: api
+      - name: app
         image: "{{DOCKER_IMAGE}}"
         ports:
         - containerPort: 9001
